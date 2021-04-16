@@ -11,6 +11,17 @@
 ## Webpack
 - A bundler. [Webpack](https://webpack.js.org/)
 
+### Webpack Core Concepts
+- Entry
+- Output
+- Loaders
++ Webpack __ONLY__ understands JavaScript. 
++ If webpack comes across a non JavaScript file (e.g. HTML, CSS), then it needs to be told how to process that file. 
++ Loaders instrct webpacl how to process and handle non JavaScript files. 
++ Babel is a loader. 
+- Plugins 
++ Extend the functionality of Webpack. e.g. delete files, start a server, deploy the app, etc.
+
 ### Why bundling files is important? 
 - Which would load faster? __One 20kb file__ or __Two 10kb files__?
 + One 20kb file because __each__ file request takes time. 
@@ -57,3 +68,17 @@ The development mode comes with features that will help with debugging.
 ```
 
 ## Babel
+- __Babel is a JavaScript compiler__ that will enable us to use JavaScript syntax that may not be available in some browsers. It'll make sure our code is compatible. [Babel](​https://babeljs.io/)
+- Can be used without Webpack and vice versa. 
+- Babel is a module library. 
+
+Babel Modules
+- Babel Core
+- Babel Preset
+- Babel Loader
+
+To install Babel:
+
+```
+npm install --save-dev @babel/core @babel/preset-env babel/loader
+```
