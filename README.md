@@ -78,6 +78,7 @@ Babel Modules
 - Babel Loader
 
 To install Babel:
+
 ```
 npm install --save-dev @babel/core @babel/preset-env babel/loader
 ```
