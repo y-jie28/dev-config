@@ -1,0 +1,8 @@
+// add rules here
+
+{
+    "extends": "eslint:recommended", 
+    "env": {
+        "browser": true
+    }
+}
