@@ -15,12 +15,12 @@
 - Entry
 - Output
 - Loaders
-+ Webpack __ONLY__ understands JavaScript. 
-+ If webpack comes across a non JavaScript file (e.g. HTML, CSS), then it needs to be told how to process that file. 
-+ Loaders instrct webpacl how to process and handle non JavaScript files. 
-+ Babel is a loader. 
+    - Webpack __ONLY__ understands JavaScript. 
+    - If webpack comes across a non JavaScript file (e.g. HTML, CSS), then it needs to be told how to process that file. 
+    - Loaders instrct webpacl how to process and handle non JavaScript files. 
+    - Babel is a loader. 
 - Plugins 
-+ Extend the functionality of Webpack. e.g. delete files, start a server, deploy the app, etc.
+    - Extend the functionality of Webpack. e.g. delete files, start a server, deploy the app, etc.
 
 ### Why bundling files is important? 
 - Which would load faster? __One 20kb file__ or __Two 10kb files__?
@@ -87,6 +87,7 @@ npm install --save-dev @babel/core @babel/preset-env babel/loader
 
 ## SASS
 - Commonly used for web development. Built on top of CSS. 
+- Sometimes referred as Pre-Processor language because it's a language that gets compiled to CSS. 
 - SASS bundles all CSS together. If there's imports, it will be bundled into one. Can safely split code into different files to organize code.
 - Not natively supported by web browsers. Use webpack to compile SASS into CSS. 
 
@@ -107,3 +108,32 @@ npm install mini-css-extract-plugin --save-dev
 ```
 
 * Supports variables. Must start with __$__. 
+
+## PostCSS
+- A Post processessor for CSS. 
+- Not a language. It's a library written in JS. It compiles CSS to an Object, and compiled back into CSS. 
+
+```
+npm install postcss-loader --save-dev
+
+// --save-dev is used to save the package for development purpose. Example: unit tests, minification..
+--save is used to save the package required for the application to run.
+```
+
+- PostCSS module expects CSS and will return CSS once it is done processing it. 
+- Need a separate configuration because it is a separate library.
+
+
+- Use with plugins. 
+
+```
+npm install autoprefixer --save-dev
+```
+
+## Linting
+- Linting is the process of reviewing your code for consistencies. It's essentially a __code quality__ reviewer.
+
+ESLint
+
+
+
