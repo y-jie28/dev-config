@@ -135,5 +135,6 @@ npm install autoprefixer --save-dev
 
 ESLint
 
-
-
+```
+npm install -g eslint
+```
