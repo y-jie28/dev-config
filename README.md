@@ -68,6 +68,7 @@ The development mode comes with features that will help with debugging.
 ```
 
 ## Babel
+
 - __Babel is a JavaScript compiler__ that will enable us to use JavaScript syntax that may not be available in some browsers. It'll make sure our code is compatible. [Babel](​https://babeljs.io/)
 - Can be used without Webpack and vice versa. 
 - Babel is a module library. 
@@ -82,3 +83,27 @@ To install Babel:
 ```
 npm install --save-dev @babel/core @babel/preset-env babel/loader
 ```
+
+
+## SASS
+- Commonly used for web development. Built on top of CSS. 
+- SASS bundles all CSS together. If there's imports, it will be bundled into one. Can safely split code into different files to organize code.
+- Not natively supported by web browsers. Use webpack to compile SASS into CSS. 
+
+```
+npm install node-sass sass-loader css-loader --save-dev
+```
+
+- node-sass takes care of compiling SASS code into CSS. This module can be used without webpack. 
+
+```
+npm install style-loader --save-dev
+```
+
+- Style loader extracts css from the bundle. 
+
+```
+npm install mini-css-extract-plugin --save-dev
+```
+
+* Supports variables. Must start with __$__. 
