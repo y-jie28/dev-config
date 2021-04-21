@@ -11,6 +11,12 @@
 ## Webpack
 - A bundler. [Webpack](https://webpack.js.org/)
 
+Core concepts of Webpack:
+- Entry
+- Output
+- Loader
+-Plugins
+
 ### Why bundling files is important? 
 - Which would load faster? __One 20kb file__ or __Two 10kb files__?
 + One 20kb file because __each__ file request takes time. 
@@ -57,3 +63,26 @@ The development mode comes with features that will help with debugging.
 ```
 
 ## Babel
+
+## SASS
+- Commonly used for web development. Built on top of CSS. 
+- SASS bundles all CSS together. If there's imports, it will be bundled into one. Can safely split code into different files to organize code.
+- Not natively supported by web browsers. Use webpack to compile SASS into CSS. 
+
+```
+npm install node-sass sass-loader css-loader --save-dev
+```
+
+- node-sass takes care of compiling SASS code into CSS. This module can be used without webpack. 
+
+```
+npm install style-loader --save-dev
+```
+
+- Style loader extracts css from the bundle. 
+
+```
+npm install mini-css-extract-plugin --save-dev
+```
+
+* Supports variables. Must start with __$__. 
