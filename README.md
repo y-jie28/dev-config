@@ -1,4 +1,4 @@
-# vue-dev-environment
+# Vue Developer Environment
 
 
 ## What Will Be Covered
@@ -69,7 +69,7 @@ The development mode comes with features that will help with debugging.
 
 ## Babel
 
-- __Babel is a JavaScript compiler__ that will enable us to use JavaScript syntax that may not be available in some browsers. It'll make sure our code is compatible. [Babel](​https://babeljs.io/)
+- __Babel is a JavaScript compiler__ that will enable us to use JavaScript syntax that may not be available in some browsers. It'll make sure our code is compatible. [Babel](https://babeljs.io/)
 - Can be used without Webpack and vice versa. 
 - Babel is a module library. 
 
@@ -83,7 +83,6 @@ To install Babel:
 ```
 npm install --save-dev @babel/core @babel/preset-env babel/loader
 ```
-
 
 ## SASS
 - Commonly used for web development. Built on top of CSS. 
