@@ -137,3 +137,6 @@ ESLint
 ```
 npm install -g eslint
 ```
+
+## Vue CLI
+manually doing config can be tedious. CLI solves this problem.
